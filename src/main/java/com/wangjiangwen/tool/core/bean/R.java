@@ -3,9 +3,11 @@ package com.wangjiangwen.tool.core.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class R<T> {
     public static final Integer CODE_SUCCESS = 200;
     public static final Integer CODE_ERROR = 500;
