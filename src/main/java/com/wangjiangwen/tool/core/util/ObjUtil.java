@@ -33,10 +33,10 @@ public class ObjUtil {
 }
 
 class BeanCopierCache {
-    private final static Map<String, BeanCopier> cache = new WeakHashMap<>();
+    private final static Map<String, BeanCopier> CACHE = new WeakHashMap<>();
 
     public static BeanCopier get(Class<?> source, Class<?> target, boolean useConverter) {
         String key = source.getName() + "#" + target.getName() + "#" + (useConverter ? "1" : "0");
-        return cache.computeIfAbsent(key, (s) -> BeanCopier.create(source, target, useConverter));
+        return CACHE.computeIfAbsent(key, (s) -> BeanCopier.create(source, target, useConverter));
     }
 }
