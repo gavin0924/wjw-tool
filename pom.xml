@@ -6,7 +6,7 @@
 
     <groupId>io.github.gavin0924</groupId>
     <artifactId>wjw-tool</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>wjw-tool</name>
     <url>https://github.com/gavin0924/wjw-tool</url>
     <description>java工具包</description>
